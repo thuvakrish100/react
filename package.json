@@ -7,7 +7,13 @@
     "watch": "webpack -d --watch",
     "build": "webpack",
     "serve": "serve ./public",
-    "start": "nodemon"
+    "deploy": "gh-pages -b master -d build",
+    "homepage": "https://thuvakrish100.github.io",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+    
   },
   "author": "Christian Nwamba",
   "license": "MIT",
